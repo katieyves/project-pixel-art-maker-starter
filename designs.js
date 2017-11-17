@@ -25,4 +25,13 @@ function makeGrid(e) {
 
 };
 
+function paintPixel() {
+	let color = $("input[type=color]").val();
+
+	$(this).css("background-color", color);
+}
+
+
+
 $("input[type=submit]").on("click", makeGrid);
+$("table").on("click", "td", paintPixel);
