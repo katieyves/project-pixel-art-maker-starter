@@ -9,11 +9,12 @@
     <h1>Lab: Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
+    <p>Max size: 100x100</p>
     <form id="sizePicker">
         Grid Height:
-        <input type="number" id="input_height" name="height" min="1" value="1">
+        <input type="number" id="input_height" name="height" min="1" value="10" max="100">
         Grid Width:
-        <input type="number" id="input_width" name="width" min="1" value="1">
+        <input type="number" id="input_width" name="width" min="1" value="10" max="100">
         <input type="submit">
     </form>
 
@@ -21,6 +22,7 @@
     <input type="color" id="colorPicker">
 
     <h2>Design Canvas</h2>
+    <button id="clear">Clear</button><button id="setBG">Set background with a picked color</button>
     <table id="pixel_canvas"></table>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

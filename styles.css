@@ -38,3 +38,8 @@ td {
 input[type=number] {
     width: 6em;
 }
+
+button {
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
